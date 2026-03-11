@@ -1,0 +1,21 @@
+version: 1
+applications:
+  - appRoot: frontend
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            # Install dependencies from the frontend folder
+            - npm ci
+        build:
+          commands:
+            # Build the Vite app
+            - npm run build
+      artifacts:
+        # Vite outputs to dist/
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*

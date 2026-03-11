@@ -1,0 +1,9 @@
+django
+djangorestframework
+pandas
+numpy
+scikit-learn
+joblib
+reportlab
+django-cors-headers
+gunicorn

@@ -1,0 +1,16 @@
+from rest_framework import serializers
+from .models import Patient, Prediction
+
+
+class PatientSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Patient
+        fields = "__all__"
+
+
+class PredictionSerializer(serializers.ModelSerializer):
+    patient = PatientSerializer(read_only=True)
+
+    class Meta:
+        model = Prediction
+        fields = "__all__"
