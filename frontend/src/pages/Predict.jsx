@@ -1,5 +1,6 @@
 import { useState } from "react";
-import API, { API_URL } from "../api/api";
+import API from "../api/api";
+import { API_URL } from "../config";
 
 function Predict() {
   const [formData, setFormData] = useState({
