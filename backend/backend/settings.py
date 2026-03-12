@@ -10,6 +10,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "cdk-jppf.onrender.com",
+    "main.d18ec1bssjrybt.amplifyapp.com",
 ]
 
 INSTALLED_APPS = [
@@ -78,5 +79,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 CORS_ALLOW_ALL_ORIGINS = True
