@@ -1,6 +1,6 @@
 import { useState } from "react";
 import API from "../api/api";
-import { API_URL } from "../config";
+import { API_BASE_URL } from "../config/api";
 
 function Predict() {
   const [formData, setFormData] = useState({
@@ -277,7 +277,7 @@ function Predict() {
 
             {/* DOWNLOAD BUTTON */}
             <a
-              href={`${API_URL}/download-report/${result.prediction.id}/`}
+              href={`${API_BASE_URL}/download-report/${result.prediction.id}/`}
               className="btn btn-success w-100 mt-3"
               target="_blank"
               rel="noreferrer"
