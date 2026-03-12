@@ -276,7 +276,7 @@ function Predict() {
 
             {/* DOWNLOAD BUTTON */}
             <a
-              href={`https://cdk-jppf.onrender.com/api/download-report/${result.prediction.id}/`}
+              href={`http://65.0.5.180:8000/api/download-report/${result.prediction.id}/`}
               className="btn btn-success w-100 mt-3"
               target="_blank"
               rel="noreferrer"
